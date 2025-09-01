@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safiullah Mahzon - Personal Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 500px;
+            width: 100%;
+            margin: 20px auto;
+        }
+        
+        .profile-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            margin-bottom: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        .profile-header {
+            background: linear-gradient(135deg, #00b4db, #0083b0);
+            padding: 30px 20px;
+            color: white;
+            position: relative;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 15px;
+        }
+        
+        .profile-name {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .profile-bio {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+        
+        .profile-links {
+            padding: 20px;
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: center;
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 1px solid #eaeaea;
+        }
+        
+        .link-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            background: #eef4ff;
+        }
+        
+        .link-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 1.2em;
+            flex-shrink: 0;
+        }
+        
+        .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; }
+        .tiktok { background: #000; color: white; }
+        .facebook { background: #3b5998; color: white; }
+        .snapchat { background: #FFFC00; color: black; }
+        .telegram { background: #0088cc; color: white; }
+        
+        .link-text {
+            flex-grow: 1;
+            text-align: left;
+            font-weight: 500;
+        }
+        
+        .link-arrow {
+            color: #888;
+            font-size: 1.2em;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 0.9em;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .weather {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-top: 10px;
+            backdrop-filter: blur(5px);
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .profile-header {
+                padding: 20px 15px;
+            }
+            
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .profile-name {
+                font-size: 1.5em;
+            }
+        }
+        
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-top: 10px;
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <img src="haji_jpg.JPG" alt="Profile" class="profile-img">
+                <h1 class="profile-name">@Safiullah_mahzon</h1>
+                <p class="profile-bio">Hi, I'm Safiullah_Nahzon, I want to show you my interesting content! 😊</p>
+                <div class="badge">Web Developer</div>
+                <div class="weather">26°C Partly Cloudy</div>
+            </div>
+            
+            <div class="profile-links">
+                <a href="https://www.instagram.com/_haji_safi_?igsh=MWEwZjRrY3dmMm1rbg%3D%3D&utm_source=qr" class="link-item">
+                    <div class="link-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="link-text">Instagram</div>
+                    <div class="link-arrow">→</div>
+                </a>
+                
+                <a href="https://www.tiktok.com/@seda_quran_11?_t=ZN-8zMysHEYOIg&_r=1" class="link-item">
+                    <div class="link-icon tiktok">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <div class="link-text">TikTok</div>
+                    <div class="link-arrow">→</div>
+                </a>
+                
+                <a href="https://www.facebook.com/share/1CooJogwg6/?mibextid=wwXIfr" class="link-item">
+                    <div class="link-icon facebook">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="link-text">Facebook</div>
+                    <div class="link-arrow">→</div>
+                </a>
+                
+                <a href="https://www.snapchat.com/add/baresh.001?share_id=_wLVD30nQiy254Vwzyo4SA&locale=en_DE" class="link-item">
+                    <div class="link-icon snapchat">
+                        <i class="fab fa-snapchat"></i>
+                    </div>
+                    <div class="link-text">Snapchat</div>
+                    <div class="link-arrow">→</div>
+                </a>
+                
+                <a href="https://t.me/itx_safi1" class="link-item">
+                    <div class="link-icon telegram">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <div class="link-text">Telegram</div>
+                    <div class="link-arrow">→</div>
+                </a>
+                 <a href="https://x.com/mahzonsafi8027?s=21" class="link-item">
+                    <div class="link-icon twitter">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="link-text">Twitter</div>
+                    <div class="link-arrow">→</div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 @Safiullah_mahzon - All rights reserved</p>
+            <div class="footer-links">
+    <a href="https://www.termsfeed.com/blog/sample-cookie-policy/" target="_blank">Cookie Preferences</a>
+    <a href="mailto:report@safiullahmahzon8@gmail.com">Report</a>
+    <a href="https://www.termsfeed.com/blog/sample-privacy-policy/" target="_blank">Privacy</a>
+</div>
+        </div>
+    </div>
+</body>
+</html>
